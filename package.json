@@ -1,0 +1,26 @@
+{
+  "name": "l3-data-analyzing-v5",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "* Нельзя менять уже написанный код, тесты и другие файлы добавленные в проект\r * Помимо стандартной библиотеки, вы можете использовать все что импортировано. Что не импортировано, то не используется.\r * Выполняйте коммиты и пуши как можно чаще. Так вы будете видеть какие из тестов сработают, а какие нет.\r * Во время работы не забывайте запускать саму утилиту и npm test",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "simple-git-hooks": {
+    "pre-push": "make lint"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "eslint": "^8.40.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "npm-check-updates": "^16.10.12",
+    "simple-git-hooks": "^2.8.1"
+  }
+}
